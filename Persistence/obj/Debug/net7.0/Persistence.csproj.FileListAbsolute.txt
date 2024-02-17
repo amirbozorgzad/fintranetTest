@@ -1,0 +1,15 @@
+D:\MyProjects\Fintranet2\Fintranet\Persistence\bin\Debug\net7.0\Persistence.deps.json
+D:\MyProjects\Fintranet2\Fintranet\Persistence\bin\Debug\net7.0\Persistence.dll
+D:\MyProjects\Fintranet2\Fintranet\Persistence\bin\Debug\net7.0\Persistence.pdb
+D:\MyProjects\Fintranet2\Fintranet\Persistence\bin\Debug\net7.0\Core.dll
+D:\MyProjects\Fintranet2\Fintranet\Persistence\bin\Debug\net7.0\Core.pdb
+D:\MyProjects\Fintranet2\Fintranet\Persistence\obj\Debug\net7.0\Persistence.csproj.AssemblyReference.cache
+D:\MyProjects\Fintranet2\Fintranet\Persistence\obj\Debug\net7.0\Persistence.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyProjects\Fintranet2\Fintranet\Persistence\obj\Debug\net7.0\Persistence.AssemblyInfoInputs.cache
+D:\MyProjects\Fintranet2\Fintranet\Persistence\obj\Debug\net7.0\Persistence.AssemblyInfo.cs
+D:\MyProjects\Fintranet2\Fintranet\Persistence\obj\Debug\net7.0\Persistence.csproj.CoreCompileInputs.cache
+D:\MyProjects\Fintranet2\Fintranet\Persistence\obj\Debug\net7.0\Persiste.61C28332.Up2Date
+D:\MyProjects\Fintranet2\Fintranet\Persistence\obj\Debug\net7.0\Persistence.dll
+D:\MyProjects\Fintranet2\Fintranet\Persistence\obj\Debug\net7.0\refint\Persistence.dll
+D:\MyProjects\Fintranet2\Fintranet\Persistence\obj\Debug\net7.0\Persistence.pdb
+D:\MyProjects\Fintranet2\Fintranet\Persistence\obj\Debug\net7.0\ref\Persistence.dll

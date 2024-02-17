@@ -1,0 +1,15 @@
+D:\MyProjects\Fintranet2\Fintranet\Service\bin\Debug\net7.0\Service.deps.json
+D:\MyProjects\Fintranet2\Fintranet\Service\bin\Debug\net7.0\Service.dll
+D:\MyProjects\Fintranet2\Fintranet\Service\bin\Debug\net7.0\Service.pdb
+D:\MyProjects\Fintranet2\Fintranet\Service\bin\Debug\net7.0\Core.dll
+D:\MyProjects\Fintranet2\Fintranet\Service\bin\Debug\net7.0\Core.pdb
+D:\MyProjects\Fintranet2\Fintranet\Service\obj\Debug\net7.0\Service.csproj.AssemblyReference.cache
+D:\MyProjects\Fintranet2\Fintranet\Service\obj\Debug\net7.0\Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\MyProjects\Fintranet2\Fintranet\Service\obj\Debug\net7.0\Service.AssemblyInfoInputs.cache
+D:\MyProjects\Fintranet2\Fintranet\Service\obj\Debug\net7.0\Service.AssemblyInfo.cs
+D:\MyProjects\Fintranet2\Fintranet\Service\obj\Debug\net7.0\Service.csproj.CoreCompileInputs.cache
+D:\MyProjects\Fintranet2\Fintranet\Service\obj\Debug\net7.0\Service.csproj.Up2Date
+D:\MyProjects\Fintranet2\Fintranet\Service\obj\Debug\net7.0\Service.dll
+D:\MyProjects\Fintranet2\Fintranet\Service\obj\Debug\net7.0\refint\Service.dll
+D:\MyProjects\Fintranet2\Fintranet\Service\obj\Debug\net7.0\Service.pdb
+D:\MyProjects\Fintranet2\Fintranet\Service\obj\Debug\net7.0\ref\Service.dll
