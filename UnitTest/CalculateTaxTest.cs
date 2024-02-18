@@ -126,12 +126,20 @@ public class CalculateTaxTest : IDisposable
             _mockCoreContext.Setup(p => p.Vehicle).Returns(vehicles.AsQueryable().BuildMockDbSet().Object);
             _mockCoreContext.Setup(p => p.Holiday).Returns(holidays.AsQueryable().BuildMockDbSet().Object);
             var service = new TaxCalculatorService(_mockUnitOfWork.Object);
+            //Check return false for wrong date
             var result1 =
                 await service.CalculateTax("Gothenburg", "Emergency", new List<DateTime> { new(2023, 01, 02) });
+
+            //Check return true for correct data
             var result2 =
                 await service.CalculateTax("string", "Emergency", new List<DateTime> { new(2013, 01, 02) });
-            Assert.True(result1.IsOk);
-            Assert.False(result2.IsOk);
+
+
+            Assert.False(result1.IsOk);
+            Assert.True(result2.IsOk);
+
+            // there are some other ways to test this endpoint 
+            // these tests are sample to show unit test part
         }
     }
 }
