@@ -20,6 +20,7 @@ public class CoreContext : DbContext
     public virtual DbSet<Holiday> Holiday { get; set; }
     public virtual DbSet<Toll> Toll { get; set; }
     public virtual DbSet<Vehicle> Vehicle { get; set; }
+    public virtual DbSet<Currency> Currency { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -34,16 +35,21 @@ public class CoreContext : DbContext
         {
             entity.ToTable("City");
             entity.HasKey(c => c.Id);
+            entity.HasOne(t => t.Currency)
+                .WithMany(v => v.City)
+                .HasForeignKey(c => c.CurrencyId);
         });
         modelBuilder.Entity<Fee>(entity =>
         {
             entity.ToTable("Fee");
             entity.HasKey(f => f.Id);
+            entity.Property(c => c.FromTime).HasColumnType("time(7)");
+            entity.Property(c => c.ToTime).HasColumnType("time(7)");
         });
         modelBuilder.Entity<Holiday>(entity =>
         {
             entity.ToTable("Holiday");
-            entity.HasKey(h => h.CalendarId);
+            entity.HasKey(h => h.Id);
             entity.HasOne(h => h.Calendar)
                 .WithMany(c => c.HoliDays)
                 .HasForeignKey(h => h.CalendarId);
@@ -64,6 +70,12 @@ public class CoreContext : DbContext
         modelBuilder.Entity<Vehicle>(entity =>
         {
             entity.ToTable("Vehicle");
+            entity.HasKey(v => v.Id);
+        });
+
+        modelBuilder.Entity<Currency>(entity =>
+        {
+            entity.ToTable("Currency");
             entity.HasKey(v => v.Id);
         });
     }

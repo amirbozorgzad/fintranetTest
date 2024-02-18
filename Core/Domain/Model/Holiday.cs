@@ -1,8 +1,10 @@
 namespace Core.Domain.Model;
 
-public class Holiday
+public class Holiday : Entity
 {
     public long CalendarId { get; set; }
-    public DateOnly HolidayDate { get; set; }
+
+    public DateTime HolidayDate { get; set; }
+
     public Calendar Calendar { get; set; }
 }

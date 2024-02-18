@@ -203,6 +203,9 @@
             "projectReferences": {
               "D:\\MyProjects\\Fintranet2\\Fintranet\\Core\\Core.csproj": {
                 "projectPath": "D:\\MyProjects\\Fintranet2\\Fintranet\\Core\\Core.csproj"
+              },
+              "D:\\MyProjects\\Fintranet2\\Fintranet\\Service\\Service.csproj": {
+                "projectPath": "D:\\MyProjects\\Fintranet2\\Fintranet\\Service\\Service.csproj"
               }
             }
           }
@@ -216,6 +219,12 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "NUnit": {
+              "target": "Package",
+              "version": "[4.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

@@ -14,8 +14,11 @@ public class Calendar : Entity
     public string Description { get; set; }
     public WeekDays WorkingDaysInWeek { get; set; }
     public Months HolidaysMonth { get; set; }
-    public DateOnly StartDate { get; set; }
-    public DateOnly EndDate { get; set; }
+
+    public DateTime StartDate { get; set; }
+
+    public DateTime EndDate { get; set; }
+
     public City City { get; set; }
     public ICollection<Holiday> HoliDays { get; set; }
 

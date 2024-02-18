@@ -11,7 +11,7 @@ public class City : Entity
     public int DaysBeforeHoliday { get; set; }
     public decimal MaximumCongestionTaxPerDay { get; set; }
     public int ChargeInterspacedInMinute { get; set; }
-    public int CurrencyId { get; set; }
+    public long CurrencyId { get; set; }
     public Currency Currency { get; set; }
     public Calendar Calendar { get; set; }
     public ICollection<Toll> Toll { get; set; }

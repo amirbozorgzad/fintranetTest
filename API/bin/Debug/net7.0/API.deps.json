@@ -348,6 +348,18 @@
           }
         }
       },
+      "NUnit/4.0.1": {
+        "runtime": {
+          "lib/net6.0/nunit.framework.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.0.1.0"
+          },
+          "lib/net6.0/nunit.framework.legacy.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.0.1.0"
+          }
+        }
+      },
       "Swashbuckle.AspNetCore.Swagger/6.5.0": {
         "dependencies": {
           "Microsoft.OpenApi": "1.2.3"
@@ -602,7 +614,9 @@
       },
       "Persistence/1.0.0": {
         "dependencies": {
-          "Core": "1.0.0"
+          "Core": "1.0.0",
+          "NUnit": "4.0.1",
+          "Service": "1.0.0"
         },
         "runtime": {
           "Persistence.dll": {}
@@ -863,6 +877,13 @@
       "sha512": "sha512-Bh6blKG8VAKvXiLe2L+sEsn62nc1Ij34MrNxepD2OCrS5cpCwQa9MeLyhVQPQ/R4Wlzwuy6wMK8hLb11QPDRsQ==",
       "path": "microsoft.win32.systemevents/5.0.0",
       "hashPath": "microsoft.win32.systemevents.5.0.0.nupkg.sha512"
+    },
+    "NUnit/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jNTHZ01hJsDNPDSBycoHpavFZUBf9vRVQLCyuo78LRrrFj6Ol/CeqK+NIeTk5d8Eycjk59KseWb7X5Ge6z7CgQ==",
+      "path": "nunit/4.0.1",
+      "hashPath": "nunit.4.0.1.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore.Swagger/6.5.0": {
       "type": "package",

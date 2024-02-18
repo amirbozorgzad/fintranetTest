@@ -597,6 +597,28 @@
           }
         }
       },
+      "NUnit/4.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net6.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net6.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/_._": {}
+        }
+      },
       "Swashbuckle.AspNetCore.Swagger/6.5.0": {
         "type": "package",
         "dependencies": {
@@ -1110,7 +1132,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "Core": "1.0.0"
+          "Core": "1.0.0",
+          "NUnit": "4.0.1",
+          "Service": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Persistence.dll": {}
@@ -2023,6 +2047,32 @@
         "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.xml",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "NUnit/4.0.1": {
+      "sha512": "jNTHZ01hJsDNPDSBycoHpavFZUBf9vRVQLCyuo78LRrrFj6Ol/CeqK+NIeTk5d8Eycjk59KseWb7X5Ge6z7CgQ==",
+      "type": "package",
+      "path": "nunit/4.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGES.md",
+        "LICENSE.txt",
+        "NOTICES.md",
+        "README.md",
+        "THIRD_PARTY_NOTICES.md",
+        "build/NUnit.props",
+        "icon.png",
+        "lib/net462/nunit.framework.dll",
+        "lib/net462/nunit.framework.legacy.dll",
+        "lib/net462/nunit.framework.legacy.xml",
+        "lib/net462/nunit.framework.xml",
+        "lib/net6.0/nunit.framework.dll",
+        "lib/net6.0/nunit.framework.legacy.dll",
+        "lib/net6.0/nunit.framework.legacy.xml",
+        "lib/net6.0/nunit.framework.xml",
+        "nunit.4.0.1.nupkg.sha512",
+        "nunit.nuspec"
       ]
     },
     "Swashbuckle.AspNetCore.Swagger/6.5.0": {

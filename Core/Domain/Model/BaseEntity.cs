@@ -15,7 +15,7 @@ public abstract class Entity
 
     public virtual long Id { get; protected set; }
 
-    public virtual DateTime Created { get; set; }
+    public virtual DateTime Created { get; set; } = DateTime.UtcNow;
     public virtual DateTime? Modified { get; set; }
 
     public override bool Equals(object obj)

@@ -51,14 +51,15 @@ public class TaxCalculatorService : ITaxCalculatorService
         if (isNotFreeDays.Count == 0)
             return new ResultDto { IsOk = true, Result = "These days are free." };
         var finalResult = await GetTaxPerDay(isNotFreeDays, city);
-        return new ResultDto { IsOk = true, Result = "The Calculated tax is: " + finalResult };
+        return new ResultDto
+            { IsOk = true, Result = "The Calculated tax is: " + finalResult + " " + city.Currency.IsoCode };
     }
 
     private bool IsFreeTollDates(DateTime date, City city)
     {
-        var isInHolidays = city.Calendar.HoliDays.Any(h => h.HolidayDate == date.ToDateOnly());
+        var isInHolidays = city.Calendar.HoliDays.Any(h => h.HolidayDate.Date == date.Date);
         var isInBeforeHolidays =
-            city.Calendar.HoliDays.Any(h => h.HolidayDate.AddDays(-city.DaysBeforeHoliday) <= date.ToDateOnly());
+            city.Calendar.HoliDays.All(h => h.HolidayDate.AddDays(-city.DaysBeforeHoliday).Date >= date.Date);
         var isInHolidayMonths = Calendar.IsMonthInHolidaysMonth(date.ToDateOnly(), city.Calendar.HolidaysMonth);
         var isNotInWorkingDay = !Calendar.IsDateInWorkingDays(date.ToDateOnly(), city.Calendar.WorkingDaysInWeek);
         return isInHolidays || isInBeforeHolidays || isInHolidayMonths || isNotInWorkingDay;

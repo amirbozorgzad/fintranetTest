@@ -56,9 +56,12 @@ D:\MyProjects\Fintranet2\Fintranet\API\obj\Debug\net7.0\API.GeneratedMSBuildEdit
 D:\MyProjects\Fintranet2\Fintranet\API\obj\Debug\net7.0\API.AssemblyInfoInputs.cache
 D:\MyProjects\Fintranet2\Fintranet\API\obj\Debug\net7.0\API.AssemblyInfo.cs
 D:\MyProjects\Fintranet2\Fintranet\API\obj\Debug\net7.0\API.csproj.CoreCompileInputs.cache
+D:\MyProjects\Fintranet2\Fintranet\API\obj\Debug\net7.0\API.sourcelink.json
 D:\MyProjects\Fintranet2\Fintranet\API\obj\Debug\net7.0\API.csproj.Up2Date
 D:\MyProjects\Fintranet2\Fintranet\API\obj\Debug\net7.0\API.dll
 D:\MyProjects\Fintranet2\Fintranet\API\obj\Debug\net7.0\refint\API.dll
 D:\MyProjects\Fintranet2\Fintranet\API\obj\Debug\net7.0\API.pdb
 D:\MyProjects\Fintranet2\Fintranet\API\obj\Debug\net7.0\API.genruntimeconfig.cache
 D:\MyProjects\Fintranet2\Fintranet\API\obj\Debug\net7.0\ref\API.dll
+D:\MyProjects\Fintranet2\Fintranet\API\bin\Debug\net7.0\nunit.framework.dll
+D:\MyProjects\Fintranet2\Fintranet\API\bin\Debug\net7.0\nunit.framework.legacy.dll
