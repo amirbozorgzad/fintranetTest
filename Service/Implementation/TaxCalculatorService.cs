@@ -25,6 +25,10 @@ public class TaxCalculatorService : ITaxCalculatorService
     /// <returns></returns>
     public async ValueTask<ResultDto> CalculateTax(string cityName, string vehicleName, List<DateTime> dates)
     {
+        //Checking date in 2013 range
+        if (dates.Any(d => d.Year != 2013))
+            return new ResultDto { IsOk = false, Result = "The date should be in year 2013" };
+
         //Checking the existence of the city
         var city = await _unitOfWork.GenericRepository<City>().Get(c => c.Name.ToLower() == cityName.ToLower())
             .Include(c => c.Calendar)

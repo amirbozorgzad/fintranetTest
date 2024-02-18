@@ -13,7 +13,7 @@ public abstract class Entity
         Modified = Modified == null ? null : DateTime.UtcNow;
     }
 
-    public virtual long Id { get; protected set; }
+    public virtual long Id { get; set; }
 
     public virtual DateTime Created { get; set; } = DateTime.UtcNow;
     public virtual DateTime? Modified { get; set; }

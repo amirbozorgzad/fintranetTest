@@ -19,8 +19,6 @@ public class TaxController : ControllerBase
     [HttpPost]
     public async Task<ActionResult<ResultDto>> CalculateTax(TaxInputDto taxDto)
     {
-        if (taxDto.dates.Any(d => d.Year != 2013))
-            return Ok(new ResultDto { IsOk = false, Result = "the date should be in year 2013" });
         return Ok(await _taxCalculateService.CalculateTax(taxDto.CityName, taxDto.vehicleName, taxDto.dates));
     }
 }
